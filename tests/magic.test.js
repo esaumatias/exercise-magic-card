@@ -27,6 +27,7 @@ describe(' Testa a função getMagicCard', () => {
     } = response;
 
     expect(response).toEqual(expected);
+    expect(Array.isArray(types)).toBe(true);
     
   });
 });
