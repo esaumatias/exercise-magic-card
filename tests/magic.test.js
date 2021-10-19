@@ -28,6 +28,8 @@ describe(' Testa a função getMagicCard', () => {
 
     expect(response).toEqual(expected);
     expect(Array.isArray(types)).toBe(true);
+    expect(subtypes.length).toEqual(2);
+    expect(rarity).toBe('Uncommon');
     
   });
 });
